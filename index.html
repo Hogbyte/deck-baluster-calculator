@@ -13,13 +13,9 @@
 				width: 100%;
 			}
 			
-			label:not(first-of-type) {
-				margin-top: 5px;
-			}
-			
+			label:not(first-of-type),
 			input[type=button] {
 				margin-top: 5px;
-				margin-bottom: 15px;
 			}
 		</style>
 		<script>
@@ -72,6 +68,7 @@
 		<h1>Deck Baluster Spacing</h1>
 	
 		<fieldset id="inputGroup">
+			<legend>Input</legend>
 			<label for="onCenterSpacing">On Center Spacing</label>
 			<input type="number" id="onCenterSpacing" />
 			<label for="balusterWidth">Baluster Width</label>
@@ -79,7 +76,10 @@
 			<label for="railingLength">Railing Length</label>
 			<input type="number" id="railingLength" />
 			<input type="button" id="calculate" value="Calculate" />
+		</fieldset>
 			
+		<fieldset>
+			<legend>Output</legend>
 			<label for="balustersRequired">Balusters Required</label>
 			<input type="text" id="balustersRequired" readOnly />
 			<label for="balusterSpacing">Baluster Spacing (for even, on-center, baluster spacing)</label>
